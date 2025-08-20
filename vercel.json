@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "app.py",        // Tên file chính của ứng dụng Flask
-      "use": "@vercel/python" // Sử dụng Python builder của Vercel
+      "src": "app.py",
+      "use": "@vercel/python"
     }
   ],
   "routes": [
     {
-      "src": "/(.*)",         // Áp dụng cho tất cả các request
-      "dest": "app.py"        // Điều hướng tất cả các request tới app.py
+      "src": "/(.*)",
+      "dest": "app.py"
     }
   ]
 }
